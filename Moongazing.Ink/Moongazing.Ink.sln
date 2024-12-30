@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{35758D86-CC93-45B6-A370-1CECDBDADAAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{ADEBB758-8D72-4BD0-BEB7-455E57B571E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Kernel.Application", "core\Moongazing.Ink.Kernel.Application\Moongazing.Ink.Kernel.Application.csproj", "{2086E412-5C3E-4300-89F8-2979E7D952F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Kernel.Persistence", "core\Moongazing.Ink.Kernel.Persistence\Moongazing.Ink.Kernel.Persistence.csproj", "{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Kernel.Security", "core\Moongazing.Ink.Kernel.Security\Moongazing.Ink.Kernel.Security.csproj", "{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Kernel.CrossCuttingConcerns", "core\Moongazing.Ink.CrossCuttingConcerns\Moongazing.Ink.Kernel.CrossCuttingConcerns.csproj", "{1A05C290-95E4-42F4-8556-8208ADDE2241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Kernel.Mailing", "core\Moongazing.Ink.Kernel.Mailing\Moongazing.Ink.Kernel.Mailing.csproj", "{932A2BA4-22DC-4E13-9A55-FFD2EA855015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Domain", "src\Moongazing.Ink.Domain\Moongazing.Ink.Domain.csproj", "{92E38933-6638-4310-AD0F-80A3929CF1C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Application", "src\Moongazing.Ink.Application\Moongazing.Ink.Application.csproj", "{99CFECBE-8790-4AF4-83C0-E4C500AA2271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Persistence", "src\Moongazing.Ink.Persistence\Moongazing.Ink.Persistence.csproj", "{ED8FA722-50B1-462B-BC68-9034DD9A6410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.Infrastructure", "Moongazing.Ink.Infrastructure\Moongazing.Ink.Infrastructure.csproj", "{67C58F26-B890-4D57-B687-392191743E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moongazing.Ink.WebApi", "src\Moongazing.Ink.WebApi\Moongazing.Ink.WebApi.csproj", "{BBEE0FE9-7D30-4DD0-9654-AABAB550197C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2086E412-5C3E-4300-89F8-2979E7D952F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2086E412-5C3E-4300-89F8-2979E7D952F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2086E412-5C3E-4300-89F8-2979E7D952F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2086E412-5C3E-4300-89F8-2979E7D952F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A05C290-95E4-42F4-8556-8208ADDE2241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A05C290-95E4-42F4-8556-8208ADDE2241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A05C290-95E4-42F4-8556-8208ADDE2241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A05C290-95E4-42F4-8556-8208ADDE2241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932A2BA4-22DC-4E13-9A55-FFD2EA855015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932A2BA4-22DC-4E13-9A55-FFD2EA855015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932A2BA4-22DC-4E13-9A55-FFD2EA855015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932A2BA4-22DC-4E13-9A55-FFD2EA855015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92E38933-6638-4310-AD0F-80A3929CF1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E38933-6638-4310-AD0F-80A3929CF1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E38933-6638-4310-AD0F-80A3929CF1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E38933-6638-4310-AD0F-80A3929CF1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CFECBE-8790-4AF4-83C0-E4C500AA2271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CFECBE-8790-4AF4-83C0-E4C500AA2271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CFECBE-8790-4AF4-83C0-E4C500AA2271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CFECBE-8790-4AF4-83C0-E4C500AA2271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED8FA722-50B1-462B-BC68-9034DD9A6410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED8FA722-50B1-462B-BC68-9034DD9A6410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED8FA722-50B1-462B-BC68-9034DD9A6410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED8FA722-50B1-462B-BC68-9034DD9A6410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C58F26-B890-4D57-B687-392191743E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C58F26-B890-4D57-B687-392191743E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C58F26-B890-4D57-B687-392191743E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C58F26-B890-4D57-B687-392191743E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEE0FE9-7D30-4DD0-9654-AABAB550197C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEE0FE9-7D30-4DD0-9654-AABAB550197C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEE0FE9-7D30-4DD0-9654-AABAB550197C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEE0FE9-7D30-4DD0-9654-AABAB550197C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2086E412-5C3E-4300-89F8-2979E7D952F7} = {ADEBB758-8D72-4BD0-BEB7-455E57B571E1}
+		{CFCCAD6B-3C4D-42E4-84BE-AE685209CDF7} = {ADEBB758-8D72-4BD0-BEB7-455E57B571E1}
+		{D9B6FC48-6E82-4DA5-8DFB-CB64E77B7349} = {ADEBB758-8D72-4BD0-BEB7-455E57B571E1}
+		{1A05C290-95E4-42F4-8556-8208ADDE2241} = {ADEBB758-8D72-4BD0-BEB7-455E57B571E1}
+		{932A2BA4-22DC-4E13-9A55-FFD2EA855015} = {ADEBB758-8D72-4BD0-BEB7-455E57B571E1}
+		{92E38933-6638-4310-AD0F-80A3929CF1C7} = {35758D86-CC93-45B6-A370-1CECDBDADAAD}
+		{99CFECBE-8790-4AF4-83C0-E4C500AA2271} = {35758D86-CC93-45B6-A370-1CECDBDADAAD}
+		{ED8FA722-50B1-462B-BC68-9034DD9A6410} = {35758D86-CC93-45B6-A370-1CECDBDADAAD}
+		{67C58F26-B890-4D57-B687-392191743E26} = {35758D86-CC93-45B6-A370-1CECDBDADAAD}
+		{BBEE0FE9-7D30-4DD0-9654-AABAB550197C} = {35758D86-CC93-45B6-A370-1CECDBDADAAD}
+	EndGlobalSection
+EndGlobal
