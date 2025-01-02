@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Moongazing.Ink.Kernel.CrossCuttingConcerns.Exceptions.Types;
 using Moongazing.Ink.Kernel.Security.Constants;
+using Moongazing.Ink.Kernel.Security.Extensions;
 
 namespace Moongazing.Ink.Kernel.Application.Pipelines.Authorization;
 
@@ -17,20 +18,20 @@ public class AuthorizationBehavior<TRequest, TResponse> : IPipelineBehavior<TReq
     public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
 
-        ICollection<string>? userRoleClaims = httpContextAccessor.HttpContext?.User?.ClaimRoles()
-            ?? throw new AuthorizationException("Claims not found.");
+        if (!httpContextAccessor.HttpContext.User.Claims.Any())
+            throw new AuthorizationException("You are not authenticated.");
 
-        bool isMatchedAUserRoleClaimWithRequestRoles = !userRoleClaims.Any(userRoleClaim =>
-               userRoleClaim == GeneralOperationClaims.Admin || request.Roles.Contains(userRoleClaim));
-
-        if (isMatchedAUserRoleClaimWithRequestRoles)
+        if (request.Roles.Length != 0)
         {
-
-            throw new AuthorizationException("You are not authorized.");
+            ICollection<string>? userRoleClaims = httpContextAccessor.HttpContext.User.GetRoleClaims() ?? [];
+            bool isMatchedAUserRoleClaimWithRequestRoles = userRoleClaims.Any(userRoleClaim =>
+                userRoleClaim == GeneralOperationClaims.Admin || request.Roles.Contains(userRoleClaim)
+            );
+            if (!isMatchedAUserRoleClaimWithRequestRoles)
+                throw new AuthorizationException("You are not authorized.");
         }
 
         TResponse response = await next();
-
         return response;
     }
 }
