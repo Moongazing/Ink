@@ -1,4 +1,5 @@
-﻿using Moongazing.Ink.Kernel.Persistence.Repositories;
+﻿using Moongazing.Ink.Domain.Enums;
+using Moongazing.Ink.Kernel.Persistence.Repositories;
 
 namespace Moongazing.Ink.Domain.Entities;
 
