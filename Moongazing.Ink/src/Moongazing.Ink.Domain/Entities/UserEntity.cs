@@ -19,4 +19,8 @@ public class UserEntity : Entity<Guid>
     public bool IsActive { get; set; }
     public ICollection<FollowEntity> Followers { get; set; } = new HashSet<FollowEntity>();
     public ICollection<FollowEntity> Followings { get; set; } = new HashSet<FollowEntity>();
+    public virtual ICollection<UserOperationClaimEntity> UserOperationClaims { get; set; } = new HashSet<UserOperationClaimEntity>();
+    public virtual ICollection<RefreshTokenEntity> RefreshTokens { get; set; } = new HashSet<RefreshTokenEntity>();
+    public virtual ICollection<EmailAuthenticatorEntity> EmailAuthenticators { get; set; } = new HashSet<EmailAuthenticatorEntity>();
+    public virtual ICollection<OtpAuthenticatorEntity> OtpAuthenticators { get; set; } = new HashSet<OtpAuthenticatorEntity>();
 }
