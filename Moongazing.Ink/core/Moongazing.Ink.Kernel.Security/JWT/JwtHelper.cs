@@ -15,7 +15,7 @@ public class JwtHelper : ITokenHelper
     public IConfiguration Configuration { get; }
     private readonly TokenOptions tokenOptions;
     private DateTime accessTokenExpiration;
-    public JwtHelper(IConfiguration configuration)
+    public JwtHelper(IConfiguration configuration)  
     {
         Configuration = configuration;
         const string configurationSection = "TokenOptions";
