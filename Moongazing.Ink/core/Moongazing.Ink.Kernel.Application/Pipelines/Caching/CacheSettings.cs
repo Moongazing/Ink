@@ -1,4 +1,4 @@
-﻿namespace NArchitecture.Core.Application.Pipelines.Caching;
+﻿namespace Moongazing.Ink.Kernel.Application.Pipelines.Caching;
 
 public class CacheSettings
 {

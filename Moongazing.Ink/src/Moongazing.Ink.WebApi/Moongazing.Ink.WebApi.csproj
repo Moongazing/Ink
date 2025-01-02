@@ -18,4 +18,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Moongazing.Ink.CrossCuttingConcerns\Moongazing.Ink.Kernel.CrossCuttingConcerns.csproj" />
+  </ItemGroup>
+
 </Project>
