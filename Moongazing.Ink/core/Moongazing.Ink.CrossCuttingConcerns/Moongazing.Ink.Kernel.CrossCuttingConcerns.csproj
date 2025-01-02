@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\Extensions\" />
+    <Folder Include="Exceptions\Handlers\" />
+    <Folder Include="Exceptions\HttpProblemDetails\" />
+    <Folder Include="Exceptions\Types\" />
+    <Folder Include="Logging\Serilog\" />
+  </ItemGroup>
+
 </Project>
