@@ -6,4 +6,4 @@ public interface IOtpAuthenticatorHelper
     public Task<string> ConvertSecretKeyToStringAsync(byte[] secretKey);
  
     public Task<bool> VerifyCodeAsync(byte[] secretKey, string code); 
-}
+}  
