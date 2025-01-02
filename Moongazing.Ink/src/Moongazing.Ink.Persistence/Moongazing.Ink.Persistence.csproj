@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="EntityConfigurations\" />
     <Folder Include="Seeds\" />
-    <Folder Include="Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +17,12 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.2" />
     <PackageReference Include="Polly" Version="8.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Moongazing.Ink.Kernel.Persistence\Moongazing.Ink.Kernel.Persistence.csproj" />
+    <ProjectReference Include="..\Moongazing.Ink.Application\Moongazing.Ink.Application.csproj" />
+    <ProjectReference Include="..\Moongazing.Ink.Domain\Moongazing.Ink.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -24,4 +24,8 @@
     <Folder Include="Features\Post\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Moongazing.Ink.Domain\Moongazing.Ink.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
