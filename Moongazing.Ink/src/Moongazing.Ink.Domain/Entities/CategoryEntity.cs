@@ -7,5 +7,6 @@ public class CategoryEntity : Entity<Guid>
     public string Name { get; set; } = default!;
     public string? Description { get; set; }
     public virtual ICollection<PostEntity> Posts { get; set; } = new HashSet<PostEntity>();
-
 }
+
+
