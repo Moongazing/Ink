@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Moongazing.Ink.Kernel.CrossCuttingConcerns.Exceptions.Types;
+using Moongazing.Ink.Kernel.Security.Constants;
 
 namespace Moongazing.Ink.Kernel.Application.Pipelines.Authorization;
 

@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Moongazing.Ink.CrossCuttingConcerns\Moongazing.Ink.Kernel.CrossCuttingConcerns.csproj" />
     <ProjectReference Include="..\Moongazing.Ink.Kernel.Persistence\Moongazing.Ink.Kernel.Persistence.csproj" />
+    <ProjectReference Include="..\Moongazing.Ink.Kernel.Security\Moongazing.Ink.Kernel.Security.csproj" />
   </ItemGroup>
 
 </Project>
